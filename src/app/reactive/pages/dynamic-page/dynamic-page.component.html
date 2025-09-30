@@ -53,22 +53,14 @@
       }
       <span class="form-text text-danger">
         <!-- contemplar error general -->
-        @if (formUtils.isValidField(myForm, 'favoriteGames')) {
-          Debe de tener al menos 2 juegos.
-        }
+        @if (formUtils.isValidField(myForm, 'favoriteGames')) { Debe de tener al menos 2 juegos. }
       </span>
     </div>
   </div>
 
   <div class="row">
     <div class="col-sm-12">
-      <button
-        type="submit"
-        class="btn btn-primary float-end"
-        (click)="onSubmit()"
-      >
-        Guardar
-      </button>
+      <button type="submit" class="btn btn-primary float-end" (click)="onSubmit()">Guardar</button>
     </div>
   </div>
 </form>
